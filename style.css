@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+section{
+	 position: relative;
+	 width: 100%;
+	 min-height: 100vh;
+	 padding: 100px;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 background: #fff;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo{
+	position: relative;
+	max-width: 80px;
+}
+
+header ul{
+	position: relative;
+	display: flex;
+}
+
+header ul li{
+	list-style: none;
+}
+
+header ul li a{
+	display: inline-block;
+	color: #333;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+
+.contend{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contend .textBox{
+	position: relative;
+	max-width: 600px;
+}
+
+.contend .textBox h2{
+	color: #333;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+
+.contend .textBox h2 span{
+	color: #ed6f57;
+	font-size: 1.2em;
+	font-weight: 900;
+}
+
+.contend .textBox p{
+	color: #333;
+}
+
+.contend .textBox a{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #ed6f57;
+	color: #fff;
+	border-radius: 40px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.contend .imgBox{
+	width: 600px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	margin-top: 50px;
+}
+
+.contend .immgBox img{
+	max-width: 340px;
+}
+
+.thumb{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.thumb li{
+	list-style: none;
+	display: inline-block;
+	margin-top: 0 20px;
+	cursor: pointer;
+	transition: 0.5s;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.thumb li:hover{
+	transform: translateY(-15px);
+}
+
+ .thumb li img{
+ 	max-width: 60px;
+ }
+
+ .sci{
+ 	position: absolute;
+ 	top: 50%;
+ 	right: 30px;
+ 	transform: translateY(-50%);
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: column;
+ }
+
+ .sci li{
+ 	list-style: none;
+ }
+
+ .sci li a{
+ 	display: inline-block;
+ 	margin-right: 5px 0;
+ 	transform: scale(0.6);
+ 	filter: invert(1);
+ }
+
+ .circle{
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background: #53b3ef;
+ 	clip-path: circle(500px at right 600px);
+ }
+
+ @media (max-width: 990px){
+ 	header{
+ 		padding: 20px;
+ 	}
+
+ 	header .logo{
+ 		max-width: 60px;
+ 	}
+
+ 	header ul{
+ 		display: none;
+ 	}
+
+ 	section{
+ 		padding: 20px 20px 120px;
+ 	}
+
+ 	.toggle{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		background: url('image/menu.png');
+		background-size: 30px;
+		background-position: center;
+		background-repeat: no-repeat;
+		filter: invert(1);
+		z-index: 11;
+	}
+
+	.toggle.active{
+		background: url('image/close.png');
+		background-size: 25px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	header ul.navigation.active{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: #fff;
+		z-index: 10;
+	}
+
+	header ul li a{
+		font-size: 1.5em;
+		margin: 5px 0;
+	}
+
+ 	.contend{
+ 		flex-direction: column;
+ 		margin-top: 100px;
+ 	}
+
+ 	.contend .textBox h2{
+ 		font-size: 2.5em;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	.contend .textBox{
+ 		max-width: 100%;
+ 	}
+
+ 	.contend .imgBox{
+ 		max-width: 100%;
+ 		justify-content: center;
+ 	}
+
+ 	.contend .imgBox img{
+ 		max-width: 300px;
+ 	}
+
+ 	.thumb{
+ 		background: rgba(255,255,255,0.4);
+ 		height: 50px;
+ 		border-top-left-radius: 20px;
+ 		border-top-right-radius: 20px;
+ 		bottom: 0;
+ 	}
+
+ 	.thumb li{
+ 		margin-top: 0;
+ 	}
+
+ 	.thumb li img{
+ 		max-width: 40px;
+ 	}
+
+ 	.circle{
+ 		clip-path: circle(400px at center bottom);
+ 	}
+
+ 	.sci{
+ 		background: #ed6f57;
+ 		right: 0;
+ 		width: 50px;
+ 		border-top-left-radius: 5px;
+ 		border-bottom-left-radius: 5px;
+ 	}
+ }
