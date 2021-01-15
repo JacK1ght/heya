@@ -226,7 +226,7 @@ header ul li a{
  	}
 
  	.contend .textBox h2{
- 		font-size: 2.5em;
+ 		font-size: 2.3rem;
  		margin-bottom: 15px;
  	}
 
@@ -257,7 +257,7 @@ header ul li a{
 
  	.thumb li img{
  		max-width: 40px;
-		margin-top: 5px;
+ 		margin-top: 5px;
  	}
 
  	.circle{
@@ -270,6 +270,12 @@ header ul li a{
  		width: 50px;
  		border-top-left-radius: 5px;
  		border-bottom-left-radius: 5px;
-		margin-top: 20px;
+ 		margin-top: 20px;	
+ 	}
+ }
+
+ @media screen and (max-width: 320px){
+ 	.contend .textBox h2{
+ 		font-size: 2rem;
  	}
  }
