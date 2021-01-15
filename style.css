@@ -257,6 +257,7 @@ header ul li a{
 
  	.thumb li img{
  		max-width: 40px;
+		margin-top: 5px;
  	}
 
  	.circle{
